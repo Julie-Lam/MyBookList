@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/08a5c2ddff.js" crossorigin="anonymous"></script>
+    <link href="https://bootswatch.com/4/sketchy/bootstrap.min.css" rel="stylesheet">
+    <title> Knockoff Book List</title>
+    
+</head>
+<body>
+    <div class = "container" id = "main">
+        <h1 class = "display-4 text-center"><i class = "fa fa-book-open text-danger"></i> MyKnockoff<span class="text-danger">Book</span>List</h1>
+        <form id="book-form">
+            <label> Title </label>
+            <input type="text" name="title" id="title" class = "form-control mb-3" placeholder = "Enter Title..."> 
+            <label> Author </label>
+            <input type="text" name ="author" id="author" class = "form-control mb-3">
+            <label> ISBN </label>
+            <input type="text" name="isbn" id = "isbn" class = "form-control mb-3"> 
+            <input type="submit" class = "btn btn-primary btn-block" value = "Add Book">
+        </form>
+        <table class = "table mt-5">
+            <thead> 
+                <tr> 
+                    <th> Title </th>
+                    <th> Author </th>
+                    <th> ISBN</th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody id = "book-list"> 
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="againBookList.js"></script>
+</body>
+</html>
